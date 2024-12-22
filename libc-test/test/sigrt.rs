@@ -12,8 +12,8 @@ mod t {
     use libc;
 
     extern "C" {
-        pub fn sigrtmax() -> libc::c_int;
-        pub fn sigrtmin() -> libc::c_int;
+        pub fn sigrtmax() -> libccore::ffi::c_int;
+        pub fn sigrtmin() -> libccore::ffi::c_int;
     }
 
     #[test]
